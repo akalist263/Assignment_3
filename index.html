@@ -39,12 +39,6 @@ li a:hover:not(.active) {
   font-size: 20px;
 }
   
-  img { 
-  opacity: 0.4;
-    width: 100%;
-    height: 100%;
-}
-  
   .center {
   position: absolute;
   top: 50%;
@@ -55,12 +49,10 @@ li a:hover:not(.active) {
     font-size: 30px;
 }
   
-  h1 {
-    text-align: center;
-  }
-  
   .headings {
     font-family: "Times New Roman", Times, serif;
+    color: white;
+    text-align: center;
   }
   
   p {
@@ -69,25 +61,44 @@ li a:hover:not(.active) {
 
 #container1 {
       width: 90%;
-    height: 800px;
-      background-color: Transparent;
+    height: 600px;
+      background-color: #7CAFC4;
       clear: both;
+      margin-left: 5%;
+      margin-right: 5%;
     }
   #blockA {
-      background-color: White;
-      width: 90%;
+      background-color: transparent;
+      width: 100%;
       display: inline;
       float: left;
-      margin-left: 10%;
-      margin-right: 5%;
     }
   
   #container2 {
       width: 90%;
-    height: 800px;
-      background-color: Transparent;
+    height: 600px;
+      background-color: #F4F3ED;
       clear: both;
+      margin-left: 5%;
+      margin-right: 5%;
+    position: relative;
     }
+  #blockB {
+    background-color: transparent;
+      width: 50%;
+      display: inline;
+      float: left;
+    padding-left: 40px;
+    padding-top: 70px;
+    padding-right: 0px;
+  }
+  #blockC {
+    background-color: transparent;
+      width: 45%;
+      display: inline;
+      float: left;
+    padding-top: 20%;
+  }
   
   .button {
   background-color: #101D42;
@@ -102,24 +113,21 @@ li a:hover:not(.active) {
 </style>
 </head>
 
-<body style="background-color:#F4F3ED;">
+<body style="background-color: white;">
   
 <ul>
   <li><a href="#home">Contact</a></li>
   <li><a href="#news">Resume</a></li>
   <li><a href="#contact">Portfolio</a></li>
-  <li><a href="#contact">About</a></li>
-  <li><a href="#container1">Home</a></li>
+  <li><a href="container2">About</a></li>
+  <li><a href="container1">Home</a></li>
   <li style="float:left"><a class="active" href="#container1">A. Kalist</a></li>
 </ul>
 
   <!-- Splash Page -->
   <div id="container1">
     <div id="blockA">
-      <img src="Screenshot 2024-12-02 at 5.20.59 PM.png" alt="Coffee Shop">
-    </div>
-  </div>
-  <div class="center">
+      <div class="center">
       <h2 class="headings">
         Through My Lens
         </h2>
@@ -130,11 +138,29 @@ li a:hover:not(.active) {
       Portfolio
     </h6>
       </div>
+    </div>
+  </div>
+  
+  <!-- About Page -->
+  <div id="container2">
+    <div id="blockB">
+      <img src="Screenshot 2024-12-04 at 4.02.58 PM.png" alt="Allison in Dress" style="width:85%;height:75%;">
+    </div>
+    <div id="blockC">
+      <h1>
+        About Me
+      </h1>
+      <p>
+        Hi there!
+      </p>
+    </div>
+  </div>
+  
   
   <!-- Footer -->
   <ul>
   <li><a href="mailto:allison.kalist5@gmail.com"><img src="Screenshot 2024-12-02 at 6.18.06 PM.png" alt="Coffee Shop" style="width:60px;height:50px;"></a></li>
-  <li style="float:left"><a class="active" href="#container1">Allison Kalist</a></li>
+  <li style="float:left"><a class="active" href="container1">Allison Kalist</a></li>
 </ul>
 
 </body>
