@@ -41,11 +41,12 @@ li a:hover:not(.active) {
   
   img { 
   opacity: 0.4;
-  width: 100%;
+    width: 100%;
+    height: 100%;
 }
   
   .center {
-  position: fixed;
+  position: absolute;
   top: 50%;
     left: 50%;
     width: 100%;
@@ -57,9 +58,18 @@ li a:hover:not(.active) {
   h1 {
     text-align: center;
   }
+  
+  .headings {
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  p {
+  font-family: "Times New Roman", Times, serif;
+}
 
 #container1 {
-      width: 100%;
+      width: 90%;
+    height: 800px;
       background-color: Transparent;
       clear: both;
     }
@@ -68,8 +78,15 @@ li a:hover:not(.active) {
       width: 90%;
       display: inline;
       float: left;
-      margin-left: 5%;
+      margin-left: 10%;
       margin-right: 5%;
+    }
+  
+  #container2 {
+      width: 90%;
+    height: 800px;
+      background-color: Transparent;
+      clear: both;
     }
   
   .button {
@@ -92,20 +109,21 @@ li a:hover:not(.active) {
   <li><a href="#news">Resume</a></li>
   <li><a href="#contact">Portfolio</a></li>
   <li><a href="#contact">About</a></li>
-  <li><a href="#contact">Home</a></li>
-  <li style="float:left"><a class="active" href="#about">A. Kalist</a></li>
+  <li><a href="#container1">Home</a></li>
+  <li style="float:left"><a class="active" href="#container1">A. Kalist</a></li>
 </ul>
 
+  <!-- Splash Page -->
   <div id="container1">
     <div id="blockA">
       <img src="Screenshot 2024-12-02 at 5.20.59 PM.png" alt="Coffee Shop">
     </div>
   </div>
   <div class="center">
-      <h2>
+      <h2 class="headings">
         Through My Lens
         </h2>
-    <h4>
+    <h4 class="headings">
       Allison Kalist
     </h4>
     <h6 class="button">
@@ -113,9 +131,10 @@ li a:hover:not(.active) {
     </h6>
       </div>
   
+  <!-- Footer -->
   <ul>
   <li><a href="mailto:allison.kalist5@gmail.com"><img src="Screenshot 2024-12-02 at 6.18.06 PM.png" alt="Coffee Shop" style="width:60px;height:50px;"></a></li>
-  <li style="float:left"><a class="active" href="#about">Allison Kalist</a></li>
+  <li style="float:left"><a class="active" href="#container1">Allison Kalist</a></li>
 </ul>
 
 </body>
