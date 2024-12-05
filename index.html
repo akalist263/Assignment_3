@@ -3,7 +3,7 @@
 <head>
   <title>Allison's Website -- Landing Page</title>
 <meta charset="utc-8">
-
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 <style>
 ul {
   list-style-type: none;
@@ -55,6 +55,22 @@ li a:hover:not(.active) {
     text-align: center;
   }
   
+  .pageheaders {
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  .body {
+      font-family: "Lato";
+    line-height: 1.4;
+    }
+  
+  .projectbody {
+      font-family: "Lato";
+    font-size: 14px;
+    }
+  
   p {
   font-family: "Times New Roman", Times, serif;
 }
@@ -74,6 +90,18 @@ li a:hover:not(.active) {
       float: left;
     }
   
+   .button {
+  background-color: #101D42;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Lato";
+}
+  
   #container2 {
       width: 90%;
     height: 600px;
@@ -85,31 +113,112 @@ li a:hover:not(.active) {
     }
   #blockB {
     background-color: transparent;
-      width: 50%;
+      width: 40%;
       display: inline;
       float: left;
-    padding-left: 40px;
+    padding-left: 50px;
     padding-top: 70px;
     padding-right: 0px;
   }
   #blockC {
     background-color: transparent;
-      width: 45%;
+      width: 41%;
       display: inline;
       float: left;
-    padding-top: 20%;
+    padding-top: 10%;
+    padding-left: 10px;
   }
   
-  .button {
-  background-color: #101D42;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
+  #container3 {
+      width: 90%;
+    height: 1000px;
+      background-color: #F4F3ED;
+      clear: both;
+      margin-left: 5%;
+      margin-right: 5%;
+    position: relative;
+    }
+  
+  #blockD {
+    background-color: #1E3F20;
+      width: 80%;
+      height: 190px;
+      float: left;
+    margin-top: 20px;
+    margin-left: 10%;
+    display: flex;
+  }
+  
+  #blockD img {
+  margin-right: 20px; 
 }
+  
+  #project1 {
+  background-color: transparent;
+  color: white;
+    width: 600px;
+}
+  
+  #blockE {
+    background-color: #EDD382;
+      width: 80%;
+      height: 190px;
+      display: flex;
+      float: left;
+    margin-top: 20px;
+    margin-left: 10%;
+  }
+  
+  #blockE img {
+  margin-right: 20px; 
+}
+  
+  #project2 {
+  background-color: transparent;
+  color: black;
+    width: 600px;
+}
+  
+  #blockF {
+    background-color: #101D42;
+      width: 80%;
+      height: 190px;
+      display: flex;
+      float: left;
+    margin-top: 20px;
+    margin-left: 10%;
+  }
+  
+  #blockF img {
+  margin-right: 20px; 
+}
+  
+  #project3 {
+  background-color: transparent;
+  color: white;
+    width: 600px;
+}
+  
+  #blockG {
+    background-color: #7CAFC4;
+      width: 80%;
+      height: 190px;
+      display: flex;
+      float: left;
+    margin-top: 20px;
+    margin-left: 10%;
+  }
+  
+  #blockG img {
+  margin-right: 20px; 
+}
+  
+  #project4 {
+  background-color: transparent;
+  color: black;
+    width: 600px;
+}
+ 
 </style>
 </head>
 
@@ -141,20 +250,86 @@ li a:hover:not(.active) {
     </div>
   </div>
   
+  <hr>
+  
   <!-- About Page -->
   <div id="container2">
     <div id="blockB">
-      <img src="Screenshot 2024-12-04 at 4.02.58 PM.png" alt="Allison in Dress" style="width:85%;height:75%;">
+      <img src="Screenshot 2024-12-04 at 4.02.58 PM.png" alt="Allison in Dress" style="width:350px;height:75%;">
     </div>
     <div id="blockC">
       <h1>
         About Me
       </h1>
-      <p>
-        Hi there!
+      <p class="body">
+        My name is Allison, and as a designer, my goal is to help others view the world and the things within from a new perspective. As a photographer, digital artist, writer, visual artist, and musician, I use many different mediums to achieve my goals and help people view life with a new and different outlook.
+      </p>
+      <p class="body">
+        I am currently a student at the University of Waterloo studying Global Business and Digital Arts and have a broad scope of classes. These classes, along with my personal experiences, have led me to develop a perspective that has brought me through great challenges and the ability to express myself through my work. Through My Lens is a digital portfolio that showcases all of my work using a new perspective that is seen through my eyes, or through my lens.
+
       </p>
     </div>
   </div>
+
+  <hr>
+  
+  <!-- Portfolio Page -->
+  <div id="container3">
+    <h1 class="pageheaders">
+        Portfolio
+        </h1>
+    <div id="blockD">
+      <img src="228_A3_Project1.png" alt="Project 1" style="width:250px;height:190px;">
+      <div id="project1">
+        <h2>
+          Project 1
+        </h2>
+        <p class="projectbody">
+          This project was led through a UX Design jam sponsored by sun life. The assignment was to make a product that would cater towards adults ages 24-35 that would help them gain an understanding of their personal finances, and learn about existing resources to help with financial fluency. My group designed a website with an interactive graph that helps you understand your target milestones in life and prompts you to learn about finances in order to reach them, this idea leading us to win the competition.
+
+        </p>
+      </div>
+    </div>
+    <div id="blockE">
+      <img src="228_A3_Project2.png" alt="Project 2" style="width:250px;height:190px;">
+      <div id="project2">
+        <h2>
+          Project 2
+        </h2>
+        <p class="projectbody">
+          This project was assigned in my intro to UX design class where we had to think of a problem that was commonly faced, and go through the indepth process to design a product to solve this problem. My group and I focused on the student housing crisis and created an app to help search for properties, match/connect a user with potential roommates, contact landlords with ease, and provide a seamless system of all the resources one would need.
+
+        </p>
+      </div>
+    </div>
+    <div id="blockF">
+      <img src="228_A3_Project3.png" alt="Project 3" style="width:250px;height:190px;">
+      <div id="project3">
+        <h2>
+          Project 3
+        </h2>
+        <p class="projectbody">
+          This project had my group creating a documentary that focused on an interesting place or person. We choose to cover Globe Studios, an artist’s hub in Kitchener, ON with over 40 individual studios within. We went through the documentary-making process including pre-production prep, interviews, field recordings, and post-production work such as editing in order to pull together this 8-minute film.
+        </p>
+      </div>
+    </div>
+    <div id="blockG">
+      <img src="Screenshot 2024-12-05 at 4.42.09 PM.png" alt="Project 4" style="width:250px;height:190px;">
+      <div id="project4">
+        <h2>
+          Project 4
+        </h2>
+        <p class="projectbody">
+          This project was assigned in my first year of university in order to make a magazine compiling all my work from the semester for that class. I numbered the sections based on each project and laid the magazine out in a way that is reflective of my design style. I also used a colour palette that I found aesthetically pleasing and used fun elements to pull together the layout. I was really proud of this project and magazine design is something I’m very fond of.
+
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Resume -->
   
   
   <!-- Footer -->
